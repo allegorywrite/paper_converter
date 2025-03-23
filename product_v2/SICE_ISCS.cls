@@ -7,7 +7,7 @@
 \usepackage[a4paper]{geometry}
 \usepackage{times}
 \usepackage{layout}
-\usepackage{graphicx} 
+\usepackage[dvipdfmx]{graphicx} 
 \usepackage{rawfonts} %
 \usepackage{oldlfont} %
 \renewcommand{\normalsize}{\@normalsize} %

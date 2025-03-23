@@ -12,27 +12,34 @@
 \usepackage{pdfpages}
 \usepackage{algorithm}
 \usepackage{algorithmic}
+
 %\usepackage{HERE}
 %\usepackage[version=3]{mhchem}%%化学式
 %\usepackage{siunitx}
-\usepackage[utf8]{inputenc}
+% 日本語サポートのためのパッケージ
+\usepackage{CJKutf8}
+\usepackage{otf}
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{pxjahyper}
+\usepackage{cite}
+\DeclareGraphicsExtensions{.eps,.pdf,.png,.jpg}
 \newcommand{\Tabref}[1]{{Table~\ref{#1}}}
 \newcommand{\Equref}[1]{Equation~(\ref{#1})}
 \newcommand{\Figref}[1]{{Fig.~\ref{#1}}}
 \newcommand{\blue}[1]{\textcolor{blue}{#1}} 
-\title{Collaborative Localization of UAVs in Monotone Environments\\
-	 Using Stein Particle Filter}
+\title{Stein ADMM: 協調自己位置推定のためのパーティクルフィルタ}
 
-\author{Takuya Arita${}^{1\dagger}$ and Toru Namerikawa${}^{2}$}
+\author{Tomoki Arita${}^{1\dagger}$ and Toru Namerikawa${}^{2}$}
 % The dagger symbol indicates the presenter.
-\speaker{Takuya Arita}
+\speaker{Tomoki Arita}
 
 \affils{${}^{1}$School of Integrated Design Engineering, Keio University, Kanagawa, Japan\\
 	    ${}^{2}$Department of System Design Engineering, Keio University, Kanagawa, Japan\\
 (Tel: +81-45-563-1151; E-mail: arita@keio.jp, namerikawa@sd.keio.ac.jp)\\
 }
 \abstract{%
-In monotone and vast outdoor environments such as farmlands and forests, global self-localization through image matching often fails due to accumulated errors and outlier effects. Particularly in collaborative estimation with multiple agents, erroneous state estimation from one agent affects all agents, causing the probability of system-wide incorrect estimation to increase exponentially with the proportion of outliers per agent. In this study, we propose a Visual Inertial Navigation System (VINS) method that uses the Stein Particle Filter to incorporate position-based likelihood into conventional image feature matching while achieving consensus on estimated states among multiple agents. The proposed method enables simultaneous handling of consensus constraints between multiple agents and multimodal distributions, achieving stable position consensus in environments with outliers, which was difficult with conventional methods. Simulation and real-world experiment (single-agent) results demonstrate that using SPF allows for more robust and flexible self-localization than existing methods by leveraging distribution approximation and gradient information. Our code and dataset are available at this URL.}
+農地や森林などの単調で広大な屋外環境では、画像マッチングによるグローバル自己位置推定は、累積誤差や外れ値の影響により失敗することが多い。特に複数エージェントによる協調推定では、1つのエージェントの誤った状態推定が全エージェントに影響し、システム全体の誤った推定確率がエージェントごとの外れ値の割合に応じて指数関数的に増加する。本研究では、シュタインパーティクルフィルタを用いて、従来の画像特徴マッチングに位置ベースの尤度を組み込みながら、複数エージェント間で推定状態のコンセンサスを達成するビジュアル慣性航法システム（VINS）手法を提案する。提案手法は、複数エージェント間のコンセンサス制約とマルチモーダル分布を同時に処理することを可能にし、従来手法では困難だった外れ値を含む環境での安定した位置コンセンサスを実現する。シミュレーションと実世界実験（単一エージェント）の結果は、SPFを使用することで、分布近似と勾配情報を活用して、既存手法よりも堅牢で柔軟な自己位置推定が可能になることを示している。コードとデータセットはこのURLで入手可能である。
+}
 
 \keywords{%
 Collaborative Localization, Unmanned Aerial Vehicles, Stein Particle Filter, Monotone Environments, Visual-Inertial Navigation System.
@@ -45,29 +52,23 @@ Collaborative Localization, Unmanned Aerial Vehicles, Stein Particle Filter, Mon
 %-----------------------------------------------------------------------
 
 \section{Introduction}
-Many autonomous mobile robots require self-localization as the foundation for their operation. With the increasing integration of autonomous robots into society, numerous self-localization technologies for environments where GPS/GNSS is unavailable, such as harsh environments and mountainous regions, are being researched. In recent years, autonomous robots have been introduced in various domains including traffic environments, daily living environments, and harsh environments, making multi-agent environments where multiple agents operate simultaneously a major research field. Even in harsh environments and mountainous regions where GPS/GNSS is unavailable, several studies have attempted collaborative work by multiple agents from the perspectives of system-wide fault tolerance and scalability for respective objectives.
+多くの自律移動可能なロボットは，動作の基盤となる自己位置推定を必要とする。
+また，自律移動ロボッ トの社会への浸透に伴って，過酷環境や山間地域等 GPS/GNSS が利用できない環境での自己位置推定技術 が数多く研究されている。
+自己位置推定には，力学制御や局所の動作計画などに利用する局所の自己位置推定の階層と，
+一貫した環境地図の作成や広域の経路計画に利用する大域の自己位置推定の階層が存在するが， 
+GPS/GNSS が利用できない環境における大域の自己位置推定では，主に LiDAR やカメラ等によって得られた点群及び画像データを種々のマッチング手法で構造化す ることにより自己位置推定を達成する手法が一般的であ る。実用的には，カメラと IMU(慣性計測ユニット)を組 み合わせる Visual Inertial System(VINS) が安価にハードウェアを実装できる点から多く利用されている。
 
-The target problem of this study is collaborative self-localization of multiple UAVs in monotone and vast outdoor environments (such as farmlands and forests) where GPS/GNSS is unavailable. In such environments, conventional global self-localization through image matching does not function adequately due to accumulated errors and outlier effects. Particularly in collaborative estimation with multiple agents, erroneous state estimation from one agent affects all agents, causing the probability of system-wide incorrect estimation to increase exponentially with the proportion of outliers.
+更に，自律移動ロボットの普及によって，複数のエージェントが同時に動作するマルチエージェント環境が近年主要な研究分野となっている。GPS/GNSS が使用で きない過酷環境や山間地域においても，システム全体と しての対故障性やそれぞれの目的におけるスケーラビリ ティの観点から，いくつかの研究でマルチエージェント による協調作業が試みられている 。
 
-Consider a scenario where a swarm of agricultural drones monitors crop growth conditions in a vast farmland. In such an environment, the crops appear similar, and there are few geographical features, making self-localization through image matching difficult. Each drone needs to estimate its position using its own camera and IMU, and share information with other drones to collaboratively estimate its position. However, if some drones make incorrect position estimations, this misinformation can propagate to other drones, potentially reducing the position estimation accuracy of the entire system. The method proposed in this study achieves stable self-localization even in such situations.
-
-The challenges of collaborative self-localization in monotone environments are primarily due to the following factors. First, monotone environments contain many similar visual features, making position estimation through image matching prone to errors. For example, in farmlands and forests, similar landscapes appear repeatedly, making feature point correspondence ambiguous. Additionally, in collaborative estimation with multiple agents, incorrect estimation by one agent affects other agents as well. Existing graph optimization-based methods (e.g., D2SLAM) break down when incorrect matching (outliers) exists. Specifically, in monotone environments, similar image matching may not function properly, and incorrect matching on the pose graph can lead to the selection of incorrect interpolation points as a result of optimization.
-
-Existing collaborative self-localization methods primarily adopt graph optimization-based approaches, with methods like D2SLAM showing top performance. However, these methods have a fundamental limitation in that they cannot handle strongly multimodal problems. In monotone environments, multiple different positions may generate similar observations, appearing as multiple peaks (multimodality) in the probability distribution. Graph optimization-based methods cannot properly represent and process such multimodal distributions, as they seek a single optimal solution, making them prone to breakdown when outliers exist. Furthermore, existing methods lack a framework that simultaneously considers consensus constraints between multiple agents and the handling of multimodal distributions.
-
-Therefore, in this study, we propose a Cooperative Visual Inertial System (CoVINS) method using the Stein Particle Filter. This method considers position-based likelihood in addition to conventional image feature matching, achieving consensus on estimated states among multiple agents. Specifically, we propose a new framework combining the Stein Particle Filter and Relaxed ADMM to address the problem of collaborative self-localization of UAVs in monotone wide-area environments. This enables simultaneous handling of consensus constraints between multiple agents and multimodal distributions, achieving stable position consensus in environments with outliers, which was difficult with conventional methods.
-
-The main difference between the proposed method and conventional methods is the realization of collaborative self-localization at the probability distribution level. Specifically, by using a particle filter, multiple graphs that could be generated by correct and incorrect edges can be explored simultaneously. This provides ambiguity representation capability that enables estimation even in monotone environments and strongly multimodal environments. While conventional graph optimization-based methods seek a single optimal solution and are prone to breakdown when outliers exist, the proposed method represents the probability distribution as a set of particles and updates them using a gradient method based on Stein Variational Gradient Descent (SVGD), enabling proper handling of multimodal distributions.
-
-The reason for introducing collaborative self-localization at the probability distribution level is to address the multimodality problem in monotone environments. In monotone environments, multiple different positions may generate similar observations, appearing as multiple peaks in the probability distribution. Conventional graph optimization-based methods seek a single optimal solution, making them prone to breakdown when outliers exist. On the other hand, probability distribution representation using particle filters can properly represent and process such multimodal distributions. Furthermore, by using Stein Variational Gradient Descent (SVGD), the particle distribution can be smoothly transformed and converged to the target distribution. This also avoids the problem of particle degradation due to resampling. Additionally, by combining Relaxed ADMM, consensus constraints between multiple agents can be considered simultaneously.
-
-The novelty of the proposed method includes:
-\begin{itemize}
-\item Formulation of the consensus problem for the Stein Particle Filter using Relaxed ADMM, proposing a collaborative self-localization method with powerful ambiguity representation capability
-\item Realization of a position estimation method applicable to real-world systems such as CoVINS through the formulation of collaborative optimization methods in 6-degree-of-freedom pose space
-\item Introduction of hierarchical likelihood, improving feature matching accuracy in monotone environments by using NetVLAD features for wide-area and Superpoint features for local areas
-\item Implementation of an algorithm capable of parallel computation of a large number of particles for multiple agents using GPUs
-\end{itemize}
+これらの背景から，GPS/GNSS を用いない大域自己位置推定手法が求められているところであるが，農地や森林など単調かつ広大な野外環境下では，誤差の蓄積と外れ値の影響により画像のマッチングによる大域の自己位置推定が十分に機能しない。特に複数のエージェン トによる協調推定においては，各エージェントの誤った状態推定が全エージェントに影響する為，各エージェン トの外れ値割合に伴ってシステム全体が誤った推定を する確率は指数関数的に上昇する。そこで本研究では， Stein Particle Filterを用いることで，従来の画像特徴量 のマッチングに位置情報による尤度を考慮しつつ，複数 のエージェント間で推定状態を合意するVINS 手法を提案する。
+\begin{figure}[t]
+	\begin{center}
+		\includegraphics[width=\linewidth]{Fig/parallel_update1.eps}
+		\caption{Parallel Update}
+		\label{fig:parallel_update}
+	\end{center}
+	\vspace{-2mm}
+\end{figure}
 
 \section{Related Work}
 This research is related to several fields. First, there is the field of Visual Inertial Systems (VINS), which combines cameras and Inertial Measurement Units (IMUs) for self-localization in environments where GPS/GNSS is unavailable. Qin et al. \cite{Qin2018} proposed VINS-Mono, a robust and versatile VINS using a monocular camera and IMU, which is a representative study in this field.

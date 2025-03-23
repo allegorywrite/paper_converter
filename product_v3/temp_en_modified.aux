@@ -1,0 +1,96 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand*\HyPL@Entry[1]{}
+\citation{Qin2018}
+\citation{Chen2021}
+\citation{Zhou2018}
+\citation{Liu2016}
+\HyPL@Entry{0<</S/D>>}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Model of Collaborative Visual Inertial System. During communication, agent1 sends image feature data to agent3, and agent3 matches this data with its own database. When a match is detected, agent3 sends relative position data to agent1 via the communication edge.}}{1}{figure.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:simple_model}{{1}{1}{Model of Collaborative Visual Inertial System. During communication, agent1 sends image feature data to agent3, and agent3 matches this data with its own database. When a match is detected, agent3 sends relative position data to agent1 via the communication edge}{figure.caption.1}{}}
+\citation{Qin2018}
+\citation{Bloesch2017}
+\citation{Forster2017}
+\citation{Chen2021}
+\citation{Zhou2018}
+\citation{Xu2020}
+\citation{Liu2016}
+\citation{Maken2021}
+\citation{Koide2021}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Related Work}{2}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Contributions}{2}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Preliminary}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Stein Variational Gradient Descent}{2}{subsection.2.1}\protected@file@percent }
+\newlabel{eq:kl_min}{{1}{2}{Stein Variational Gradient Descent}{equation.2.1}{}}
+\newlabel{eq:kl_gradient}{{2}{2}{KL Divergence-Stein Operator Relationship}{equation.2.2}{}}
+\newlabel{eq:ksd}{{3}{2}{Stein Variational Gradient Descent}{equation.2.3}{}}
+\newlabel{eq:phi_solution}{{4}{2}{Stein Variational Gradient Descent}{equation.2.4}{}}
+\citation{Peng2016}
+\citation{Boyd2011}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Relaxed ADMM}{3}{subsection.2.2}\protected@file@percent }
+\newlabel{eq:constrained_opt}{{5}{3}{Relaxed ADMM}{equation.2.5}{}}
+\newlabel{eq:augmented_lagrangian}{{6}{3}{Relaxed ADMM}{equation.2.6}{}}
+\newlabel{eq:relaxed_admm_steps}{{7}{3}{Relaxed ADMM}{equation.2.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Problem Formulation}{3}{section.3}\protected@file@percent }
+\newlabel{eq:map}{{8}{3}{Problem Formulation}{equation.3.8}{}}
+\newlabel{eq:se3_matrix}{{9}{3}{Problem Formulation}{equation.3.9}{}}
+\newlabel{eq:kl_consensus}{{14}{4}{Problem Formulation}{equation.3.14}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}SPF For Collaborative Localization}{4}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Stein Variational Gradient Descent through Particle Interactions}{4}{subsection.4.1}\protected@file@percent }
+\newlabel{eq:svgd_min}{{15}{4}{Stein Variational Gradient Descent through Particle Interactions}{equation.4.15}{}}
+\newlabel{eq:log_target_dist}{{16}{4}{Stein Variational Gradient Descent through Particle Interactions}{equation.4.16}{}}
+\newlabel{eq:gauss_newton}{{17}{4}{Stein Variational Gradient Descent through Particle Interactions}{equation.4.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}SPF integrating Relaxed ADMM}{4}{subsection.4.2}\protected@file@percent }
+\newlabel{eq:kl_consensus_relaxed}{{19}{4}{SPF integrating Relaxed ADMM}{equation.4.19}{}}
+\newlabel{eq:relaxed_lagrangian}{{20}{4}{Augmented Lagrangian for Probability Distributions}{equation.4.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Sequence diagram of each agent receiving relative positions and updating estimated states in parallel in a system like Fig. \ref {fig:simple_model}. (a) shows a straightforward method without consensus rules, (b) shows a method enabling global convergence using consensus rules.}}{5}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:parallel_update}{{2}{5}{Sequence diagram of each agent receiving relative positions and updating estimated states in parallel in a system like Fig. \ref {fig:simple_model}. (a) shows a straightforward method without consensus rules, (b) shows a method enabling global convergence using consensus rules}{figure.caption.2}{}}
+\newlabel{eq:prob_relaxed_admm}{{21}{5}{Consensus ADMM for Probability Distributions}{equation.4.21}{}}
+\newlabel{eq:modified_SVGD}{{26}{5}{SPF integrating Relaxed ADMM}{equation.4.26}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Simulation Results with Collaborative Localization}{5}{section.5}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces SPF For Collaborative Localization}}{6}{algorithm.1}\protected@file@percent }
+\newlabel{alg:dspf}{{1}{6}{SPF For Collaborative Localization}{algorithm.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Two-dimensional Case}{6}{subsection.5.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Simulation Conditions}}{6}{table.caption.3}\protected@file@percent }
+\newlabel{tb:sim1}{{1}{6}{Simulation Conditions}{table.caption.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Two-dimensional cooperative self-localization simulation with an outlier ratio of 0.2. (a) shows the initial state, (b) shows the state at 150 steps. The left figure shows the true positions of each agent, and the points in the right figure are the coordinates $p_{i,r}$ of the particles for each agent.}}{6}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:simulation_1_step_0}{{3}{6}{Two-dimensional cooperative self-localization simulation with an outlier ratio of 0.2. (a) shows the initial state, (b) shows the state at 150 steps. The left figure shows the true positions of each agent, and the points in the right figure are the coordinates $p_{i,r}$ of the particles for each agent}{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Time transition of the coordinates $p_{i,r}$ of all particles in the two-dimensional cooperative self-localization simulation, shown separately for x-coordinates and y-coordinates. Each line plotted represents the coordinates of an agent's particles. The red vertical dotted lines indicate the steps where outliers were generated.}}{6}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:plot_1}{{4}{6}{Time transition of the coordinates $p_{i,r}$ of all particles in the two-dimensional cooperative self-localization simulation, shown separately for x-coordinates and y-coordinates. Each line plotted represents the coordinates of an agent's particles. The red vertical dotted lines indicate the steps where outliers were generated}{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Three-dimensional Case}{6}{subsection.5.2}\protected@file@percent }
+\citation{Forster2017}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Simulation Conditions}}{7}{table.caption.6}\protected@file@percent }
+\newlabel{tb:sim2}{{2}{7}{Simulation Conditions}{table.caption.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Extension to the Visual Inertial System}{7}{section.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Three-dimensional cooperative self-localization simulation with an outlier ratio of 0.2. The images show the state at (a) 0s, (b) 0.3s, (c) 0.5s, and (d) 0.9s from the start of the simulation. The point clouds are the coordinates $p_{i,r}$ of each agent's particles. The yellow-green arrows represent the self-positions estimated from each agent's point cloud.}}{7}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:3d_simulation}{{5}{7}{Three-dimensional cooperative self-localization simulation with an outlier ratio of 0.2. The images show the state at (a) 0s, (b) 0.3s, (c) 0.5s, and (d) 0.9s from the start of the simulation. The point clouds are the coordinates $p_{i,r}$ of each agent's particles. The yellow-green arrows represent the self-positions estimated from each agent's point cloud}{figure.caption.7}{}}
+\newlabel{eq:predict}{{28}{7}{Extension to the Visual Inertial System}{equation.6.28}{}}
+\newlabel{eq:step}{{29}{7}{Extension to the Visual Inertial System}{equation.6.29}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Hardware Experiment Conditions}}{8}{table.caption.8}\protected@file@percent }
+\newlabel{tb:sim3}{{3}{8}{Hardware Experiment Conditions}{table.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Verification of the proposed algorithm on ROS. The light drone 3D models represent the coordinates $p_{i,r}$ of the particles, and the dark 3D model represents the estimated position of the agent. The yellow points are feature points extracted by superpoint, and the yellow line is the estimated trajectory of the agent.}}{8}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:ros_demo}{{6}{8}{Verification of the proposed algorithm on ROS. The light drone 3D models represent the coordinates $p_{i,r}$ of the particles, and the dark 3D model represents the estimated position of the agent. The yellow points are feature points extracted by superpoint, and the yellow line is the estimated trajectory of the agent}{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Benchmark of the proposed method and D2SLAM verified on ROS. The light lines represent the error time transition between each particle and the Ground Truth, and the thick orange line represents the error time transition in the estimated state of the proposed method. The thick blue line represents the error transition of D2SLAM.}}{8}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:benchmark}{{7}{8}{Benchmark of the proposed method and D2SLAM verified on ROS. The light lines represent the error time transition between each particle and the Ground Truth, and the thick orange line represents the error time transition in the estimated state of the proposed method. The thick blue line represents the error transition of D2SLAM}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{8}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A}Proof of Theorems}{9}{appendix.A}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Proof of Theorem 2 (ADMM for Probability Distributions)}{9}{subsection.A.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Proof of Theorem 3 (Additional Terms as Exponential Penalties)}{9}{subsection.A.2}\protected@file@percent }
+\bibcite{Qin2018}{1}
+\bibcite{Chen2021}{2}
+\bibcite{Zhou2018}{3}
+\bibcite{Liu2016}{4}
+\bibcite{Koide2021}{5}
+\bibcite{Bloesch2017}{6}
+\bibcite{Forster2017}{7}
+\bibcite{Xu2020}{8}
+\bibcite{Maken2021}{9}
+\bibcite{Schmuck2018}{10}
+\bibcite{Bastianello2020}{11}
+\bibcite{Arandjelovic2016}{12}
+\bibcite{DeTone2018}{13}
+\bibcite{Peng2016}{14}
+\bibcite{Boyd2011}{15}
+\gdef \@abspage@last{11}

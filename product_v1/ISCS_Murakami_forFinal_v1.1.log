@@ -1,0 +1,735 @@
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.euc) (TeX Live 2023/Debian) (preloaded format=platex 2025.3.20)  23 MAR 2025 21:13
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**ISCS_Murakami_forFinal_v1.1.tex
+(./ISCS_Murakami_forFinal_v1.1.tex
+pLaTeX2e <2023-02-14>+1, based on
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(./SICE_ISCS.cls (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count186
+\Gm@cntv=\count187
+\c@Gm@tempcnt=\count188
+\Gm@bindingoffset=\dimen156
+\Gm@wd@mp=\dimen157
+\Gm@odd@mp=\dimen158
+\Gm@even@mp=\dimen159
+\Gm@layoutwidth=\dimen160
+\Gm@layoutheight=\dimen161
+\Gm@layouthoffset=\dimen162
+\Gm@layoutvoffset=\dimen163
+\Gm@dimlist=\toks19
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/layout.sty
+Package: layout 2023-08-20 v1.2e Show layout parameters
+\oneinch=\count189
+\cnt@paperwidth=\count190
+\cnt@paperheight=\count191
+\cnt@hoffset=\count192
+\cnt@voffset=\count193
+\cnt@textheight=\count194
+\cnt@textwidth=\count195
+\cnt@topmargin=\count196
+\cnt@oddsidemargin=\count197
+\cnt@evensidemargin=\count198
+\cnt@headheight=\count199
+\cnt@headsep=\count266
+\cnt@marginparsep=\count267
+\cnt@marginparwidth=\count268
+\cnt@marginparpush=\count269
+\cnt@footskip=\count270
+\fheight=\count271
+\ref@top=\count272
+\ref@hoffset=\count273
+\ref@voffset=\count274
+\ref@head=\count275
+\ref@body=\count276
+\ref@foot=\count277
+\ref@margin=\count278
+\ref@marginwidth=\count279
+\ref@marginpar=\count280
+\Interval=\count281
+\ExtraYPos=\count282
+\PositionX=\count283
+\PositionY=\count284
+\ArrowLength=\count285
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
+))
+\Gin@req@height=\dimen164
+\Gin@req@width=\dimen165
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/rawfonts.sty
+Package: rawfonts 1994/05/08 Low-level LaTeX 2.09 font compatibility
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/somedefs.sty
+Package: somedefs 1994/06/01 v0.03 Toolkit for optional definitions
+)
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 49
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/oldlfont.sty
+Package: oldlfont 2014/09/29 v2.2k Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/tracefnt.sty
+Package: tracefnt 2020/12/22 v3.0n Standard LaTeX package (font tracing)
+\tracingfonts=\count286
+LaTeX Info: Redefining \selectfont on input line 107.
+Applying: [2021/06/01] Add hook to \selectfont  on input line 142.
+Already applied: [0000/00/00] Add hook to \selectfont  on input line 145.
+)
+\symbold=\mathgroup4
+\symsans=\mathgroup5
+\symtypewriter=\mathgroup6
+\symitalic=\mathgroup7
+\symsmallcaps=\mathgroup8
+\symslanted=\mathgroup9
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 61.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 62.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 63.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 69.
+LaTeX Info: Redefining \em on input line 79.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fleqn.clo
+File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
+\mathindent=\skip48
+Applying: [2015/01/01] Make \[ robust on input line 50.
+LaTeX Info: Redefining \[ on input line 51.
+Already applied: [0000/00/00] Make \[ robust on input line 62.
+Applying: [2015/01/01] Make \] robust on input line 74.
+LaTeX Info: Redefining \] on input line 75.
+Already applied: [0000/00/00] Make \] robust on input line 83.
+)
+-- This is a 10 point document
+\tmpitemindent=\dimen166
+\c@section=\count287
+\c@subsection=\count288
+\c@subsubsection=\count289
+\captionindent=\skip49
+\c@figure=\count290
+\c@table=\count291
+\@minsofar=\count292
+\@min=\count293
+\@cite@temp=\count294
+\c@theorem=\count295
+) (/usr/share/texlive/texmf-dist/tex/latex/ascmac/ascmac.sty
+Package: ascmac 2020/01/15 v2.1 ascmac wrapper (community edition) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/ascmac/tascmac.sty
+Package: tascmac 2020/01/15 v2.1 ascmac package (community edition) 
+\@savetbaselineshift=\dimen167
+\@saveybaselineshift=\dimen168
+\scb@x=\box68
+\scscb@x=\box69
+\@bw=\dimen169
+\@nbox=\box70
+\@nbody=\box71
+\@scw=\dimen170
+\ascmac@hoboxa=\box72
+\ascmac@hoboxb=\box73
+\@itemh=\dimen171
+\@iboxpos=\toks20
+\@iboxstr=\box74
+\@bwsp=\box75
+\@@bwsp=\box76
+\@bcal=\count296
+\shaderule=\dimen172
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks21
+\symAMSa=\mathgroup11
+\symAMSb=\mathgroup12
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/breqn/breqn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-01-22 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2024-01-04 L3 backend support: dvips
+\l__pdf_internal_box=\box77
+\g__pdf_backend_object_int=\count297
+\l__pdf_backend_content_box=\box78
+\l__pdf_backend_model_box=\box79
+\g__pdf_backend_annotation_int=\count298
+\g__pdf_backend_link_int=\count299
+\g__pdf_backend_link_sf_int=\count300
+))
+Package: breqn 2021/10/28 v0.98l Breaking equations
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen173
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen174
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count301
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count302
+\leftroot@=\count303
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count304
+\DOTSCASE@=\count305
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box80
+\strutbox@=\box81
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen175
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count306
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count307
+\dotsspace@=\muskip16
+\c@parentequation=\count308
+\dspbrk@lvl=\count309
+\tag@help=\toks23
+\row@=\count310
+\column@=\count311
+\maxfields@=\count312
+\andhelp@=\toks24
+\eqnshift@=\dimen176
+\alignsep@=\dimen177
+\tagshift@=\dimen178
+\tagwidth@=\dimen179
+\totwidth@=\dimen180
+\lineht@=\dimen181
+\@envbody=\toks25
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/breqn/flexisym.sty
+Package: flexisym 2021/10/28 v0.98l Make math characters macros
+LaTeX Info: Redefining \textprime on input line 299.
+LaTeX Info: Redefining \not on input line 357.
+
+(/usr/share/texlive/texmf-dist/tex/latex/breqn/cmbase.sym
+File: cmbase.sym 2007/12/19 v0.92
+LaTeX Info: Redefining \hbar on input line 324.
+LaTeX Info: Redefining \surd on input line 326.
+LaTeX Info: Redefining \angle on input line 334.
+LaTeX Info: Redefining \neq on input line 335.
+LaTeX Info: Redefining \mapsto on input line 336.
+LaTeX Info: Redefining \cong on input line 337.
+LaTeX Info: Redefining \notin on input line 340.
+LaTeX Info: Redefining \rightleftharpoons on input line 341.
+LaTeX Info: Redefining \doteq on input line 342.
+LaTeX Info: Redefining \hookrightarrow on input line 343.
+LaTeX Info: Redefining \hookleftarrow on input line 344.
+LaTeX Info: Redefining \bowtie on input line 345.
+LaTeX Info: Redefining \models on input line 346.
+LaTeX Info: Redefining \Longrightarrow on input line 347.
+LaTeX Info: Redefining \longrightarrow on input line 348.
+LaTeX Info: Redefining \Longleftarrow on input line 349.
+LaTeX Info: Redefining \longleftarrow on input line 350.
+LaTeX Info: Redefining \longmapsto on input line 351.
+LaTeX Info: Redefining \longleftrightarrow on input line 352.
+LaTeX Info: Redefining \Longleftrightarrow on input line 353.
+LaTeX Info: Redefining \cdots on input line 357.
+LaTeX Info: Redefining \vdots on input line 360.
+LaTeX Info: Redefining \ddots on input line 365.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/breqn/mathstyle.sty
+Package: mathstyle 2021/10/28 v0.98l Tracking mathstyle implicitly
+LaTeX Info: Redefining \displaystyle on input line 95.
+LaTeX Info: Redefining \textstyle on input line 97.
+LaTeX Info: Redefining \scriptstyle on input line 99.
+LaTeX Info: Redefining \scriptscriptstyle on input line 101.
+LaTeX Info: Redefining \genfrac on input line 149.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count313
+\calc@Bcount=\count314
+\calc@Adimen=\dimen182
+\calc@Bdimen=\dimen183
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count315
+\calc@Cskip=\skip55
+)
+\inf@bad=\count316
+\maxint=\count317
+\listwidth=\dimen184
+\eqnumsep=\dimen185
+\eqmargin=\dimen186
+\eqlinespacing=\skip56
+\eqlineskip=\skip57
+\eqlineskiplimit=\dimen187
+\eqbinoffset=\muskip17
+\eqdelimoffset=\muskip18
+\eqindentstep=\dimen188
+\eqstyle=\toks27
+\eqbreakdepth=\count318
+\eqinterlinepenalty=\count319
+\intereqpenalty=\count320
+\intereqskip=\skip58
+\prerelpenalty=\count321
+\prebinoppenalty=\count322
+\Dmedmuskip=\muskip19
+\Dthickmuskip=\muskip20
+\eqleftskip=\skip59
+\eqrightskip=\skip60
+\eq@vspan=\skip61
+\eq@binoffset=\muskip21
+\EQ@box=\box82
+\EQ@copy=\box83
+\EQ@numbox=\box84
+\eq@wdNum=\dimen189
+\GRP@numbox=\box85
+\grp@wdNum=\dimen190
+\eq@lines=\count323
+\eq@curline=\count324
+\eq@badness=\count325
+\EQ@vims=\count326
+\eq@dp=\dimen191
+\eq@wdL=\dimen192
+\eq@wdT=\dimen193
+\eq@wdMin=\dimen194
+\grp@wdL=\dimen195
+\grp@wdR=\dimen196
+\grp@wdT=\dimen197
+\eq@wdRmax=\dimen198
+\eq@firstht=\dimen199
+\eq@wdCond=\dimen256
+\eq@indentstep=\dimen257
+\eq@linewidth=\dimen258
+\grp@linewidth=\dimen259
+\eq@hshift=\dimen260
+\eq@given@sidespace=\dimen261
+\eq@final@linecount=\count327
+\eq@wdR=\dimen262
+\EQ@continue=\toks28
+\lr@level=\count328
+\GRP@queue=\toks29
+\GRP@box=\box86
+\GRP@wholebox=\box87
+\darraycolsep=\skip62
+\cur@row=\count329
+\cur@col=\count330
+\conditionsep=\skip63
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2023/07/08 v1.2f Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup13
+\symboldletters=\mathgroup14
+\symboldsymbols=\mathgroup15
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \OT1/cmr/bx/n, using \pmb.
+Package bm Info: No bold for \OT1/cmss/m/n, using \pmb.
+Package bm Info: No bold for \OT1/cmtt/m/n, using \pmb.
+Package bm Info: No bold for \OT1/cmr/m/it, using \pmb.
+Package bm Info: No bold for \OT1/cmr/m/sc, using \pmb.
+Package bm Info: No bold for \OT1/cmr/m/sl, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2024/01/21 v0.5y Insert pages of external PDF documents (AM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen263
+\ESO@tempdimb=\dimen264
+
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: dvips.def on input line 274.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+))
+\AM@pagewidth=\dimen265
+\AM@pageheight=\dimen266
+\AM@fboxrule=\dimen267
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/ppnull.def
+File: ppnull.def 2024/01/21 v0.5y Pdfpages dummy driver (AM)
+
+
+Package pdfpages Warning: I will use a dummy \includepdf command
+(pdfpages)                which will insert empty pages instead of the actual
+(pdfpages)                PDF file because we are running in DVI mode or with
+(pdfpages)                dvips driver.
+
+)
+\pdfpages@includegraphics@status=\count331
+\AM@pagebox=\box88
+\AM@global@opts=\toks30
+\AM@pagecnt=\count332
+\AM@toc@title=\toks31
+\AM@lof@heading=\toks32
+\c@AM@survey=\count333
+\AM@templatesizebox=\box89
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks33
+\inpenc@posthook=\toks34
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 4
+1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+
+LaTeX Warning: Unused global option(s):
+    [a4paper].
+
+(./ISCS_Murakami_forFinal_v1.1.aux)
+\openout1 = `ISCS_Murakami_forFinal_v1.1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69684pt
+* \textheight=699.93779pt
+* \oddsidemargin=-15.36446pt
+* \evensidemargin=-15.36446pt
+* \topmargin=-31.29802pt
+* \headheight=12.0pt
+* \headsep=19.91692pt
+* \topskip=10.0pt
+* \footskip=28.45274pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=28.45274pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvips (dvips) on input line 124.
+))
+LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+LaTeX Warning: Citation `Davoodi' on page 1 undefined on input line 58.
+
+
+LaTeX Warning: Citation `2017FTC' on page 1 undefined on input line 58.
+
+
+LaTeX Warning: Citation `2018FTC' on page 1 undefined on input line 58.
+
+
+LaTeX Warning: Citation `Resi_leaderfollower' on page 1 undefined on input line
+ 60.
+
+
+LaTeX Warning: Citation `Affection' on page 1 undefined on input line 60.
+
+
+LaTeX Warning: Reference `Nice_image_fault' on page 1 undefined on input line 7
+1.
+
+File: Fig/Nice_image_fault.eps Graphic file (type eps)
+<Fig/Nice_image_fault.eps>
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[1
+
+
+]
+
+LaTeX Warning: Citation `栗城モデル' on page 2 undefined on input line 111.
+
+
+Overfull \hbox (4.09193pt too wide) detected at line 125
+[]
+ []
+
+
+LaTeX Warning: Reference `DefinitionofSymbols(L-F)' on page 2 undefined on inpu
+t line 128.
+
+File: Fig/DefSymbol_(L-F).eps Graphic file (type eps)
+<Fig/DefSymbol_(L-F).eps>
+File: Fig/Topology.eps Graphic file (type eps)
+ <Fig/Topology.eps>
+
+LaTeX Warning: Reference `Topology' on page 2 undefined on input line 148.
+
+
+LaTeX Warning: Reference `Trajectorysample' on page 2 undefined on input line 1
+50.
+
+
+LaTeX Warning: Reference `Errorsample' on page 2 undefined on input line 150.
+
+File: Fig/sampletrajectry.eps Graphic file (type eps)
+<Fig/sampletrajectry.eps>
+File: Fig/sampleconsensus.eps Graphic file (type eps)
+ <Fig/sampleconsensus.eps>
+
+LaTeX Warning: Citation `4types_fault' on page 2 undefined on input line 174.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[2]
+
+LaTeX Warning: Reference `kuriki_consensus' on page 3 undefined on input line 1
+94.
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 193--195
+[]\OT1/ptm/m/n/10 We present the fault de-tec-tion al-go-rithm, con-trol
+ []
+
+
+LaTeX Warning: Citation `Affection' on page 3 undefined on input line 218.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[3]
+
+LaTeX Warning: Reference `kuriki_consensus' on page 4 undefined on input line 3
+23.
+
+
+LaTeX Warning: Reference `kuriki_consensus' on page 4 undefined on input line 3
+32.
+
+
+LaTeX Warning: Reference `Topology' on page 4 undefined on input line 335.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[4]
+
+LaTeX Warning: Reference `parameter_ADLSM' on page 5 undefined on input line 33
+7.
+
+
+Overfull \hbox (3.88628pt too wide) in paragraph at lines 345--354
+ [][][][] 
+ []
+
+
+LaTeX Warning: Reference `HC_L_T' on page 5 undefined on input line 358.
+
+
+LaTeX Warning: Reference `HC_L_R' on page 5 undefined on input line 358.
+
+
+LaTeX Warning: Reference `HC_L_E' on page 5 undefined on input line 358.
+
+
+LaTeX Warning: Reference `HC_L_T' on page 5 undefined on input line 360.
+
+
+LaTeX Warning: Reference `HC_L_R' on page 5 undefined on input line 362.
+
+
+LaTeX Warning: Reference `HC_L_E' on page 5 undefined on input line 364.
+
+File: Fig/Leader_Trajectory_2ko1.eps Graphic file (type eps)
+<Fig/Leader_Trajectory_2ko1.eps>
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 369--370
+ [] 
+ []
+
+File: Fig/Leader_Residual_2ko1.eps Graphic file (type eps)
+<Fig/Leader_Residual_2ko1.eps>
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 378--379
+ [] 
+ []
+
+File: Fig/Leader_Consensus_2ko1.eps Graphic file (type eps)
+<Fig/Leader_Consensus_2ko1.eps>
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 387--388
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[5]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[6
+
+] (./ISCS_Murakami_forFinal_v1.1.aux)
+ ***********
+pLaTeX2e <2023-02-14>+1, based on
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5601 strings out of 475916
+ 84248 string characters out of 5788117
+ 1952820 words of memory out of 5000000
+ 27613 multiletter control sequences out of 15000+600000
+ 599356 words of font info for 188 fonts, out of 8000000 for 9000
+ 309 hyphenation exceptions out of 8191
+ 72i,16n,85p,860b,321s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on ISCS_Murakami_forFinal_v1.1.dvi (6 pages, 38724 bytes).
