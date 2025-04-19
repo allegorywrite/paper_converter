@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[a4paper,fleqn,10pt,twocolumn]{SICE_ISCS}
+\documentclass[a4paper,fleqn,10pt]{paper_template}
 %\usepackage{url}
 \usepackage{ascmac}
 \usepackage{amssymb}
@@ -319,7 +319,7 @@ where all agents update their relative position particles at the point when they
 
 \begin{figure}[t]
 	\begin{center}
-		\includegraphics[width=\linewidth]{Fig/parallel_update1.eps}
+		\includegraphics[width=\linewidth]{../Fig/parallel_update1.eps}
 		\caption{Sequence diagram of each agent receiving relative positions and updating estimated states in parallel in a system like Fig. \ref{fig:simple_model}. (a) shows a straightforward method without consensus rules, (b) shows a method enabling global convergence using consensus rules.}
 		\label{fig:parallel_update}
 	\end{center}
@@ -467,7 +467,7 @@ From Fig. \ref{fig:plot_1}, it can also be seen that consensus and convergence a
 
 \begin{figure}[t]
 	\begin{center}
-		\includegraphics[width=\linewidth]{Fig/2d_simulation.eps}
+		\includegraphics[width=\linewidth]{../Fig/2d_simulation.eps}
 		\caption{Two-dimensional cooperative self-localization simulation with an outlier ratio of 0.2. (a) shows the initial state, (b) shows the state at 150 steps.
     The left figure shows the true positions of each agent, and the points in the right figure are the coordinates $p_{i,r}$ of the particles for each agent.}
 		\label{fig:simulation_1_step_0}
@@ -477,7 +477,7 @@ From Fig. \ref{fig:plot_1}, it can also be seen that consensus and convergence a
 
 % \begin{figure}[t]
 % 	\begin{center}
-% 		\includegraphics[width=\linewidth]{Fig/error_0.2_sim.eps}
+% 		\includegraphics[width=\linewidth]{../Fig/error_0.2_sim.eps}
 % 		\caption{Simulation (Outlier ratio: 0.2, step: 150)}
 % 		\label{fig:simulation_1_step_150}
 % 	\end{center}
@@ -486,7 +486,7 @@ From Fig. \ref{fig:plot_1}, it can also be seen that consensus and convergence a
 
 \begin{figure}[t]
 	\begin{center}
-		\includegraphics[width=\linewidth]{Fig/2d_plot.eps}
+		\includegraphics[width=\linewidth]{../Fig/2d_plot.eps}
 		\caption{Time transition of the coordinates $p_{i,r}$ of all particles in the two-dimensional cooperative self-localization simulation, shown separately for x-coordinates and y-coordinates.
     Each line plotted represents the coordinates of an agent's particles.
     The red vertical dotted lines indicate the steps where outliers were generated.}
@@ -536,7 +536,7 @@ Compared to the two-dimensional case, the computational cost increased in the th
 
 \begin{figure}[t]
 	\begin{center}
-		\includegraphics[width=\linewidth]{Fig/3d_simulation.eps}
+		\includegraphics[width=\linewidth]{../Fig/3d_simulation.eps}
 		\caption{Three-dimensional cooperative self-localization simulation with an outlier ratio of 0.2. The images show the state at (a) 0s, (b) 0.3s, (c) 0.5s, and (d) 0.9s from the start of the simulation.
     The point clouds are the coordinates $p_{i,r}$ of each agent's particles. The yellow-green arrows represent the self-positions estimated from each agent's point cloud.}
 		\label{fig:3d_simulation}
@@ -601,7 +601,7 @@ Fig. \ref{fig:benchmark} shows the error transition between each particle and th
 
 \begin{figure}[t]
 	\begin{center}
-		\includegraphics[width=\linewidth]{Fig/particle_filter_demo.eps}
+		\includegraphics[width=\linewidth]{../Fig/particle_filter_demo.eps}
 		\caption{Verification of the proposed algorithm on ROS. The light drone 3D models represent the coordinates $p_{i,r}$ of the particles, and the dark 3D model represents the estimated position of the agent. The yellow points are feature points extracted by superpoint, and the yellow line is the estimated trajectory of the agent.}
 		\label{fig:ros_demo}
 	\end{center}
@@ -610,7 +610,7 @@ Fig. \ref{fig:benchmark} shows the error transition between each particle and th
 
 \begin{figure}[t]
 	\begin{center}
-		\includegraphics[width=\linewidth]{Fig/benchmark.eps}
+		\includegraphics[width=\linewidth]{../Fig/benchmark.eps}
 		\caption{Benchmark of the proposed method and D2SLAM verified on ROS. The light lines represent the error time transition between each particle and the Ground Truth, and the thick orange line represents the error time transition in the estimated state of the proposed method. The thick blue line represents the error transition of D2SLAM.}
 		\label{fig:benchmark}
 	\end{center}
