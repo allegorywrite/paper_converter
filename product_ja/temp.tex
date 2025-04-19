@@ -72,7 +72,7 @@ Collaborative Localization, Unmanned Aerial Vehicles, Stein Particle Filter, Mon
 そこで本研究では，確率分布の柔軟な表現が可能なStein Particle Filter(SPF)\cite{Liu2016}と分散最適化手法であるADMMを組み合わせることで，外れ値に対してロバストかつエージェント間で整合性のある協調自己位置推定フレームワークを提案する．本手法は，従来の画像特徴量マッチングに位置情報による尤度を統合し，多峰性分布の表現と複数エージェント間の状態合意を同時に実現する．
 \begin{figure}[t]
 	\begin{center}
-		\includegraphics[width=\linewidth]{Fig/simple_model.eps}
+		\includegraphics[width=\linewidth]{../Fig/simple_model.eps}
 		\caption{Collaborative Visual Inertial Systemのモデル．通信時にagent1はagent3に画像特徴量データを送信し，agent3は送信されたデータを自信のデータベース内と照合してマッチングを行う．マッチングが検出されると，agent3は通信エッジを経由してagent1に相対位置に関するデータを送信する．}
 		\label{fig:simple_model}
 	\end{center}

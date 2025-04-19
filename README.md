@@ -19,6 +19,7 @@
 ├── README.md                 # このファイル
 ├── policy.md                 # 論文執筆ポリシー
 ├── console.md                # 執筆者のみが答えられる質問の記録
+├── Fig/                      # 論文で使用されるすべての図表ファイル
 ├── material/                 # 元の資料
 │   ├── 60QA.docx             # 論文の60の質問と回答
 │   ├── MSCS2025_Arita_TN_rev1.pdf  # 元の日本語論文
@@ -28,6 +29,13 @@
 │   ├── MSCS2025_Arita_ocr_result.md  # プレゼンのOCR結果
 │   ├── MSCS2025_Arita_text.md        # プレゼンのテキスト
 │   └── MSCS2025_Arita_TN_rev1_ocr_result.md  # 論文のOCR結果
+├── product_ja/               # 日本語版論文
+│   ├── Markdown/             # 日本語のMarkdownコンテンツ
+│   └── temp.tex              # 日本語用LaTeXファイル
+├── product_en/               # 英語版論文
+│   ├── Markdown/             # 英語のMarkdownコンテンツ
+│   ├── temp_en.tex           # 英語用LaTeXファイル
+│   └── temp_en_modified.tex  # 修正された英語用LaTeXファイル
 ├── product_v1/               # 英語論文の初期バージョン
 ├── product_v2/               # 英語論文の最終バージョン
 │   ├── ISCS_Arita_forFinal_v1.0.tex  # 最終論文のTeXファイル
