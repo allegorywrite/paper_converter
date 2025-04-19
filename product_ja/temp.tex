@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[a4paper,fleqn,10pt,twocolumn]{SICE_ISCS}
+\documentclass[a4paper,10pt]{paper_template}
 %\usepackage{url}
 \usepackage{ascmac}
 \usepackage{amssymb}
@@ -72,7 +72,7 @@ Collaborative Localization, Unmanned Aerial Vehicles, Stein Particle Filter, Mon
 そこで本研究では，確率分布の柔軟な表現が可能なStein Particle Filter(SPF)\cite{Liu2016}と分散最適化手法であるADMMを組み合わせることで，外れ値に対してロバストかつエージェント間で整合性のある協調自己位置推定フレームワークを提案する．本手法は，従来の画像特徴量マッチングに位置情報による尤度を統合し，多峰性分布の表現と複数エージェント間の状態合意を同時に実現する．
 \begin{figure}[t]
 	\begin{center}
-		\includegraphics[width=\linewidth]{Fig/simple_model.eps}
+		\includegraphics[width=\linewidth]{../Fig/simple_model.eps}
 		\caption{Collaborative Visual Inertial Systemのモデル．通信時にagent1はagent3に画像特徴量データを送信し，agent3は送信されたデータを自信のデータベース内と照合してマッチングを行う．マッチングが検出されると，agent3は通信エッジを経由してagent1に相対位置に関するデータを送信する．}
 		\label{fig:simple_model}
 	\end{center}
@@ -326,7 +326,7 @@ b^r&=({\mathbf{J}}^r)^\top d_k(p_{i,r})^\vee,\\
 
 \begin{figure}[t]
 	\begin{center}
-		\includegraphics[width=\linewidth]{Fig/parallel_update1.eps}
+		\includegraphics[width=\linewidth]{../Fig/parallel_update1.eps}
 		\caption{Fig. \ref{fig:simple_model}のようなシステムにおいて，各エージェントが相対位置を受けとり推定状態を並列に更新するシーケンス図．(a)は合意則を用いないstoraightforwardな方法，(b)は合意則を用いることにより大域での収束を可能にする手法}
 		\label{fig:parallel_update}
 	\end{center}
@@ -476,7 +476,7 @@ Fig. \ref{fig:plot_1}からも，150ステップほどで合意及び収束が�
 
 \begin{figure}[t]
 	\begin{center}
-		\includegraphics[width=\linewidth]{Fig/2d_simulation.eps}
+		\includegraphics[width=\linewidth]{../Fig/2d_simulation.eps}
 		\caption{外れ値の割合が0.2の場合における，2次元の協調自己位置推定シミュレーション．(a)は初期状態，(b)は150ステップ目の様子．
     左図は各エージェントの真の位置，右図の点はそれぞれのエージェントにおけるパーティクルの座標$p_{i,r}$である．}
 		\label{fig:simulation_1_step_0}
@@ -486,7 +486,7 @@ Fig. \ref{fig:plot_1}からも，150ステップほどで合意及び収束が�
 
 % \begin{figure}[t]
 % 	\begin{center}
-% 		\includegraphics[width=\linewidth]{Fig/error_0.2_sim.eps}
+% 		\includegraphics[width=\linewidth]{../Fig/error_0.2_sim.eps}
 % 		\caption{シミュレーション (外れ値の割合：0.2, step: 150)}
 % 		\label{fig:simulation_1_step_150}
 % 	\end{center}
@@ -495,7 +495,7 @@ Fig. \ref{fig:plot_1}からも，150ステップほどで合意及び収束が�
 
 \begin{figure}[t]
 	\begin{center}
-		\includegraphics[width=\linewidth]{Fig/2d_plot.eps}
+		\includegraphics[width=\linewidth]{../Fig/2d_plot.eps}
 		\caption{2次元の協調自己位置推定シミュレーションにおける全パーティクルの座標$p_{i,r}$の時間遷移をx座標及びy座標で分けて示したもの．
     プロットされた各線はそれぞれエージェントのパーティクルの座標を示す．
     赤色の縦点線は外れ値が生成されたステップを示す．}
@@ -545,7 +545,7 @@ SE(3)における提案手法の検証として，3Dにおける協調自己位�
 
 \begin{figure}[t]
 	\begin{center}
-		\includegraphics[width=\linewidth]{Fig/3d_simulation.eps}
+		\includegraphics[width=\linewidth]{../Fig/3d_simulation.eps}
 		\caption{外れ値の割合が0.2の場合における，
     3次元の協調自己位置推定シミュレーション．画像はそれぞれシミュレーション開始から(a)0s, (b)0.3s, (c)0.5s, (d)0.9s経過した様子である．
     点群は各エージェントのパーティクルの座標$p_{i,r}$である．黄緑色の矢印は各エージェントの点群から推定した自己位置である．}
@@ -613,7 +613,7 @@ Fig. \ref{fig:benchmark}は各パーティクルとベンチマーク手法に�
 
 \begin{figure}[t]
 	\begin{center}
-		\includegraphics[width=\linewidth]{Fig/particle_filter_demo.eps}
+		\includegraphics[width=\linewidth]{../Fig/particle_filter_demo.eps}
 		\caption{ROS上での提案アルゴリズムの検証の様子．薄いドローンの3dモデルがパーティクルの座標$p_{i,r}$，濃い3Dモデルがエージェントの推定位置である．黄色の点群はsuperpointにより抽出した特徴点，黄色線はエージェントの推定軌道である．}
 		\label{fig:ros_demo}
 	\end{center}
@@ -622,7 +622,7 @@ Fig. \ref{fig:benchmark}は各パーティクルとベンチマーク手法に�
 
 \begin{figure}[t]
 	\begin{center}
-		\includegraphics[width=\linewidth]{Fig/benchmark.eps}
+		\includegraphics[width=\linewidth]{../Fig/benchmark.eps}
 		\caption{ROS上で検証した提案手法とD2SLAMのベンチマーク．薄い線は各パーティクルにおけるGround Truthとの誤差時間遷移，オレンジの濃い線は提案手法の推定状態における誤差時間遷移である．濃い青線はD2SLAMの誤差遷移である．}
 		\label{fig:benchmark}
 	\end{center}
